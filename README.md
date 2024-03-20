@@ -1,29 +1,24 @@
 # Image Resize Extension For Tiptap
 
 
-- create src in root dir
-    - create components in src
-    - create index.js inside src
+### Usage
 
-- Install react and react-dom. `npm install --save-dev react react-dom`
+```js
+import { ResizableImage } from "img-resize-tiptap-extension";
+import StarterKit from "@tiptap/starter-kit";
+import Image from "@tiptap/extension-image";
 
-- Now we do not want to install react the same version in the project that will install my project, so I'm adding it to peerDependencies as well. 
+const extensions = [StarterKit, Image, ResizableImage];
+const editor = useEditor({
+  extensions,
+  content,
+});
 
-```json
-"peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-}
+<EditorContent
+  editor={editor}
+  style={{ border: "1px solid black", height: "100px", padding: "10px" }}
+/>;
+
 ```
 
-- Installing storybook. `npx sb init`
-    - Select `vite` and go ahead.
-- Create Folder inside components. 
-- Create `index.js` and create any components as we want. Also export all components in `index.js`.
-- Create `Requirements.stories.jsx` and add the the component that you want to use.
-
-- Installing additional packages. `npm install --save-dev `
-
-- After creating the componets and testing in the storybook.
-- Installing Rollup for bunduling the package.
-- `npm install rollup rollup-plugin-babel @rollup/plugin-node-resolve rollup-plugin-peer-deps-external --save-dev`
+- Feel free to raise Pull Request if you find any bug or any improvement.
