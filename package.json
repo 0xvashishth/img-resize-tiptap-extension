@@ -1,6 +1,6 @@
 {
   "name": "img-resize-tiptap-extension",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Image resize extension for TipTap",
   "type": "module",
   "main": "dist/index.cjs",
