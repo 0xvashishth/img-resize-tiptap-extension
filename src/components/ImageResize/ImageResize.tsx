@@ -72,10 +72,10 @@ export default function ResizableImageWrapper(props: WrapperProps) {
         onMouseLeave={handleMouseLeave}
       >
         <Resizable
-          className="resizable-image"
+          // className="resizable-image"
           defaultSize={{
-            width: defaultWidth ? defaultWidth : "300",
-            height: defaultHeight ? defaultHeight : "300",
+            width: defaultWidth ? defaultWidth : "200",
+            height: defaultHeight ? defaultHeight : "80",
           }}
           onResize={(
             e: MouseEvent | TouchEvent,
