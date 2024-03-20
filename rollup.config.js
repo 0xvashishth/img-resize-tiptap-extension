@@ -14,10 +14,10 @@ export default [
     input: './src/index.jsx',
     
     output: [
-      // {
-      //   file: pkgg.main,
-      //   format: 'cjs',
-      // },
+      {
+        file: pkgg.main,
+        format: 'cjs',
+      },
       {
         file: pkgg.module,
         exports: 'named',
