@@ -21,12 +21,13 @@ const parsePosition = (positionString: string) => {
 };
 
 
-export default function ResizableImageWrapper(props: WrapperProps) {
-  const defaultWidth = props.node.attrs.width;
-  const defaultHeight = props.node.attrs.height;
-
+export default function ImageResizeWrapper(props: WrapperProps) {
+  
   const [isClicked, setIsClicked] = useState(false);
   const [marginLeft, setMarginLeft] = useState(props.node.attrs?.marginLeft ?? 0);
+
+  const defWidth = props.node.attrs.width;
+  const defHeight = props.node.attrs.height;
 
   const handleImageClick = () => {
     setIsClicked(true);
@@ -74,8 +75,8 @@ export default function ResizableImageWrapper(props: WrapperProps) {
         <Resizable
           // className="resizable-image"
           defaultSize={{
-            width: defaultWidth ? defaultWidth : "200",
-            height: defaultHeight ? defaultHeight : "80",
+            width: defWidth ? defWidth : "200",
+            height: defHeight ? defHeight : "80",
           }}
           onResize={(
             e: MouseEvent | TouchEvent,

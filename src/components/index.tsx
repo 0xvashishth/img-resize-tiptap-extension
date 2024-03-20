@@ -1,6 +1,6 @@
 import { mergeAttributes, Node, nodeInputRule } from "@tiptap/core";
 import { ReactNodeViewRenderer } from "@tiptap/react";
-import ResizableImageWrapper from "./ImageResize/ImageResize";
+import ImageResizeWrapper from "./ImageResize/ImageResize";
 
 interface ImageOptions {
   inline: boolean;
@@ -106,7 +106,7 @@ export const ResizableImage = Node.create<ImageOptions>({
   },
 
   addNodeView() {
-    return ReactNodeViewRenderer(ResizableImageWrapper);
+    return ReactNodeViewRenderer(ImageResizeWrapper);
   },
 
   addInputRules() {
