@@ -1,6 +1,6 @@
 {
   "name": "img-resize-tiptap-extension",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "Image resize extension for TipTap",
   "type": "module",
   "main": "dist/index.cjs.js",
@@ -29,6 +29,7 @@
     "@chromatic-com/storybook": "^1.2.23",
     "@rollup/plugin-commonjs": "^25.0.7",
     "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@storybook/addon-essentials": "^8.0.2",
     "@storybook/addon-interactions": "^8.0.2",
     "@storybook/addon-links": "^8.0.2",
@@ -44,6 +45,7 @@
     "@tiptap/starter-kit": "^2.2.4",
     "@types/node": "^20.11.30",
     "prop-types": "^15.8.1",
+    "re-resizable": "^6.9.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^4.13.0",
@@ -51,13 +53,16 @@
     "rollup-plugin-dts": "^6.1.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
-    "storybook": "^8.0.2"
+    "rollup-plugin-typescript": "^1.0.1",
+    "storybook": "^8.0.2",
+    "typescript": "^5.4.2"
   },
   "peerDependencies": {
     "@tiptap/core": "^2.2.4",
     "@tiptap/extension-image": "^2.2.4",
     "@tiptap/pm": "^2.2.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "re-resizable": "^6.9.11"
   }
 }

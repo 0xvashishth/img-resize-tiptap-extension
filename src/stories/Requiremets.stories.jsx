@@ -1,6 +1,6 @@
 // Import your component
 import React from 'react';
-import ImageResize from '../components/ImageResize/ImageResize';
+import {ResizableImage} from '../index';
 import { useEditor, EditorContent, FloatingMenu, BubbleMenu } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 import Image  from '@tiptap/extension-image';
@@ -8,7 +8,7 @@ import Image  from '@tiptap/extension-image';
 const extensions = [
   StarterKit,
   Image,
-  ImageResize
+  ResizableImage
 ]
 
 const content = '<p>Hello World!</p>'
@@ -16,7 +16,7 @@ const content = '<p>Hello World!</p>'
 // Export a default export named 'default' (if applicable)
 export default {
   title: 'ImageResize', // Define the title for your stories
-  component: ImageResize, // Specify the component being used in the stories
+  component: ResizableImage, // Specify the component being used in the stories
 };
 
 // Define your stories using the 'args' pattern
