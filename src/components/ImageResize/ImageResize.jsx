@@ -1,5 +1,5 @@
 import Image from '@tiptap/extension-image';
-import React from 'react';
+// import React from 'react';
 
 const ImageResize = Image.extend({
     addAttributes() {
@@ -147,4 +147,4 @@ const ImageResize = Image.extend({
     },
 });
 
-export default ImageResize;
+module.exports = ImageResize;

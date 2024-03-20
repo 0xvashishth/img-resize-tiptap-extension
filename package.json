@@ -1,18 +1,34 @@
 {
   "name": "img-resize-tiptap-extension",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.2",
+  "description": "Image resize extension for TipTap",
+  "type": "module",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build-lib": "rollup -c"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "Tiptap",
+    "Image-resize-extension",
+    "Tiptap-extension",
+    "Image-resize",
+    "Image-resize-tiptap-extension"
+  ],
+  "author": "Vashishth Patel",
   "license": "MIT",
   "devDependencies": {
+    "@babel/preset-react": "^7.24.1",
     "@chromatic-com/storybook": "^1.2.23",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "@storybook/addon-essentials": "^8.0.2",
     "@storybook/addon-interactions": "^8.0.2",
     "@storybook/addon-links": "^8.0.2",
@@ -21,21 +37,27 @@
     "@storybook/react": "^8.0.2",
     "@storybook/react-vite": "^8.0.2",
     "@storybook/test": "^8.0.2",
-    "prop-types": "^15.8.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "storybook": "^8.0.2"
-  },
-  "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "dependencies": {
     "@tiptap/core": "^2.2.4",
     "@tiptap/extension-image": "^2.2.4",
     "@tiptap/pm": "^2.2.4",
     "@tiptap/react": "^2.2.4",
     "@tiptap/starter-kit": "^2.2.4",
-    "@types/node": "^20.11.30"
+    "@types/node": "^20.11.30",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^4.13.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-dts": "^6.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "storybook": "^8.0.2"
+  },
+  "peerDependencies": {
+    "@tiptap/core": "^2.2.4",
+    "@tiptap/extension-image": "^2.2.4",
+    "@tiptap/pm": "^2.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

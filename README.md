@@ -23,3 +23,7 @@
 - Create `Requirements.stories.jsx` and add the the component that you want to use.
 
 - Installing additional packages. `npm install --save-dev `
+
+- After creating the componets and testing in the storybook.
+- Installing Rollup for bunduling the package.
+- `npm install rollup rollup-plugin-babel @rollup/plugin-node-resolve rollup-plugin-peer-deps-external --save-dev`
